@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-css</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- start icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- end icons -->
+    <!-- start fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Jersey+25&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Jersey+25&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Jersey+25&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- end fonts -->
+</head>
+<body>
+    <!-- start header -->
+<header>
+    <nav>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="">
+        </div>
+        <i class="bi bi-list"></i>
+        <div class="right-nav">
+        <ul>
+            <li><a class="active" href="#">home <span>+</span></a>
+            <div>
+                <a class="active" href="index.html">Home 01</a>
+                <a href="">Home 02</a>
+                <a href="">Home 03</a>
+            </div>
+            </li>
+            <li><a href="about.html">About Us <span>+</span></a></li>
+            <li><a href="#">Tournament <span>+</span></a>
+                <div>
+                    <a href="">Tournament </a>
+                    <a href="">Tournament Details</a>
+                </div>
+            </li>
+            <li><a href="#">shop <span>+</span></a>
+                <div>
+                    <a href="">shop</a>
+                    <a href="">Shop Details</a>
+                    <a href="">Explore product</a>
+                    <a href="">cart</a>
+                    <a href="">Checkout</a>
+                </div>
+            </li>
+            <li><a href="#">Pages <span>+</span></a>
+                <div>
+                    <a href="">blog</a>
+                    <a href="">Blog Details</a>
+                    <a href="">Create Items</a>
+                    <a href="">Creators</a>
+                    <a href="">Creator details</a>
+                    <a href="">service</a>
+                    <a href="">Service Details</a>
+                    <a href="">team</a>
+                    <a href="">team Details</a>
+                    <a href="">Login</a>
+                    <a href="">Wallet</a>
+                    <a href="">404</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact Us <span>+</span></a></li>
+        </ul>
+        <div class="serch">
+            <i class='bx bx-search-alt-2'></i>
+            <i class='bx bx-cart-alt'></i>
+
+        </div>
+        <div class="connect">
+            <i class='bx bx-menu-alt-right'>
+                <div class="menu">
+                <img src="imgs/logo.png" alt="">
+                <p>we understand better that enim ad minim veniam, consectetur adipiscing enim ad minim elit,</p>
+                <p>we understand better that enim ad minim veniam, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div>
+                    <b>contact us</b>
+                    <span><i class="bi bi-geo-alt-fill"></i>lavaca street, suite 2000</span>
+                    <span><i class="bi bi-envelope-fill"></i>email@evha.com</span>
+                    <span><i class="bi bi-telephone-fill"></i>(+880) 172570051</span>
+                </div>
+                <hr>
+                <div class="links">
+                <div><i class='bx bxl-facebook'></i></div>
+                <div><i class="bi bi-twitter"></i></div>
+                <div><i class="bi bi-instagram"></i></div>
+                <div><i class='bx bxl-pinterest'></i></div>
+                </div>
+            </div>
+            <div class="bg-menu"></div>
+            </i>
+            <div class="bu-bg"><img src="imgs/btn-arrow.png" alt=""><span>~connect</span></div>
+        </div>
+        </div>
+    </nav>
+    <div class="heading">
+        <div class="head">
+            <p class="p1">Unlesh the <img src="imgs/line-img.png" alt=""></p>
+            <h1>create <b>nft’s</b></h1>
+            <span>Of <b>art</b></span>
+            <p class="p2">GENERAL INFORMATION</p>
+            <div class="bu-bg">Explore More</div>
+            <img src="imgs/banner.png" alt="">
+        </div>
+        <div class="poster">
+            <img src="imgs/stars.png" alt="">
+            <img src="imgs/monky.png" alt="">
+            <img class="star" src="imgs/2.png" alt="">
+        </div>
+
+    </div>
+    <div class="hr">
+        <img src="imgs/hr.png" alt="">
+        <img src="imgs/hr.png" alt="">
+    </div>
+</header>
+        <!-- end header -->
+        <!-- start sec-featured -->
+        <section class="featured">
+            <div class="title">
+                <p>featured Item</p>
+                <a href="#">Discover More<i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="continar">
+            <div class="card">
+                <div>
+                    <p>Lune Studio </p>
+                    <img src="imgs/charackter-1.png" alt="">
+                </div>
+                    <div>
+                        <img src="imgs/item-1.png" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <span>Highest bid</span>
+                            <p> <i class="bi bi-link-45deg"></i> 3.005 <span>ETH</span></p>
+                        </div>
+                                <button>
+                                    BID <i class='bx bx-right-arrow-alt'></i>
+                                </button>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div>
+                    <p>Lune Studio </p>
+                    <img src="imgs/charackter-2.png" alt="">
+                </div>
+                    <div>
+                        <img src="imgs/item-2.png" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <span>Highest bid</span>
+                            <p> <i class="bi bi-link-45deg"></i> 3.005 <span>ETH</span></p>
+                        </div>
+                                <button>
+                                    BID <i class='bx bx-right-arrow-alt'></i>
+                                </button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <p>Lune Studio </p>
+                    <img src="imgs/charackter-3.png" alt="">
+                </div>
+                    <div>
+                        <img src="imgs/item-3.png" alt="">
+                    </div>
+                    <div class="sell">
+                        <div>
+                            <span>Highest bid</span>
+                            <p> <i class="bi bi-link-45deg"></i> 3.005 <span>ETH</span></p>
+                        </div>
+                                <button>
+                                    BID <i class='bx bx-right-arrow-alt'></i>
+                                </button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <p>Lune Studio </p>
+                    <img src="imgs/charackter-1.png" alt="">
+                </div>
+                    <div>
+                        <img src="imgs/item-4.png" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <span>Highest bid</span>
+                            <p> <i class="bi bi-link-45deg"></i> 3.005 <span>ETH</span></p>
+                        </div>
+                                <button>
+                                    BID <i class='bx bx-right-arrow-alt'></i>
+                                </button>
+                </div>
+            </div>
+        </div>
+        <div class="title title2">
+            <p>Top Seller<span>In 1 Day</span></p>
+            <div>
+            <a href="#"><i class='bx bxs-chevron-left' ></i>
+                </a>
+                <a href=""><i class='bx bxs-chevron-right'></i></a>
+                </div>
+        </div>
+        <div class="continar2">
+            <div class="Top-Seller">
+                <div>
+                    <img src="imgs/seller-1.png" alt="">
+                </div>
+                <div>
+                    <p>first player</p>
+                    <span>Highest bid</span>
+                    <div><img src="imgs/likes.png" alt=""></div>
+                </div>
+                <div>
+                    <span>158</span>
+                    <span>35K</span>
+                </div>
+                <p>powered by blockchain</p>
+                
+            </div>
+            <div class="Top-Seller">
+                <div>
+                    <img src="imgs/seller-2.png" alt="">
+                </div>
+                <div>
+                    <p>Second player</p>
+                    <span>Highest bid</span>
+                    <div><img src="imgs/likes.png" alt=""></div>
+                </div>
+                <div>
+                    <span>158</span>
+                    <span>35K</span>
+                </div>
+                <p>powered by blockchain</p>
+                
+            </div>
+            <div class="Top-Seller">
+                <div>
+                    <img src="imgs/seller-3.png" alt="">
+                </div>
+                <div>
+                    <p>Third player</p>
+                    <span>Highest bid</span>
+                    <div><img src="imgs/likes.png" alt=""></div>
+                </div>
+                <div>
+                    <span>158</span>
+                    <span>35K</span>
+                </div>
+                <p>powered by blockchain</p>
+                
+            </div>
+        </div>
+        </section>
+        <!-- end sec-featured -->
+        
+        <section class="Gaming">
+            <div class="continar-1">
+                <div>
+                    <img src="imgs/nextLevel.png" alt="">
+                </div>
+                <div>
+                    <h4>Gaming Next <span>Level</span></h4>
+                    <p class="p1">arctic warfare magnum {nft’s}</p>
+                    <p>
+                        Building your own stuff, you can do that too. The ASSET CREATOR will allow creators to make things for the as well as sell them game’s marketp just characters.
+                    </p>
+                    <div>
+                        <div>
+                            <p>                        
+                                <img src="imgs/up1.png" alt=""> | Earn Great Rewards  <span> ( Friend )</span></p>
+                        </div>
+                    </div>
+                    <div class="bu-bg">
+                        <span>Explore More</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="continar-2">
+            <div>
+                <img src="./imgs/3.png" alt="">
+                <span>game & key saler</span>
+                <p>Free yourself from complexities videos vital aspect.</p>
+
+            </div>
+            <div>
+                <img src="./imgs/4.png" alt="">
+                <span>AD generation</span>
+                <p>Free yourself from complexities videos vital aspect.</p>
+
+            </div>
+            <div>
+                <img src="./imgs/5.png" alt="">
+                <span>game promotion</span>
+                <p>Free yourself from complexities videos vital aspect.</p>
+
+            </div>
+            <div>
+                <img class="up2" src="./imgs/up1.png" alt="">
+                <span>MOre Earning</span>
+                <p>Free yourself from complexities videos vital aspect.</p>
+
+            </div>
+            </div>
+        </section>
+        <!-- end sec-Gaming -->
+        <!-- start sec-Limited  -->
+        <section class="Limited">
+            <div class="title title2">
+                <div>
+                <span>top Auction</span>
+                <p>Limited Auction</p>
+                </div>
+                <div>
+                <a href="#"><i class='bx bxs-chevron-left' ></i>
+                    </a>
+                    <a href=""><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+            </div>
+            <div class="continar">
+                <div class="card-2">
+                    <div class="img-card">
+                        <img src="imgs/card-sell1.png" alt="">
+                    </div>
+                    <p>
+                        Lune Studio <i class='bx bxs-heart'></i>
+                    </p>
+                    <div>
+                        <div>
+                            <span>Highest bid</span>
+                            <p> <i class="bi bi-link-45deg"></i> 3.005 <span>ETH</span></p>
+                        </div>
+                                <button>
+                                    BID <i class='bx bx-right-arrow-alt'></i>
+                                </button>
+                    </div>
+
+                </div>
+                <div class="card-2">
+                    <div class="img-card">
+                        <img src="imgs/card-sell2.png" alt="">
+                    </div>
+                    <p>
+                        Lune Studio <i class='bx bxs-heart'></i>
+                    </p>
+                    <div>
+                        <div>
+                            <span>Highest bid</span>
+                            <p> <i class="bi bi-link-45deg"></i> 3.005 <span>ETH</span></p>
+                        </div>
+                                <button>
+                                    BID <i class='bx bx-right-arrow-alt'></i>
+                                </button>
+                    </div>
+
+                </div>
+                <div class="card-2">
+                    <div class="img-card">
+                        <img src="imgs/card-sell3.png" alt="">
+                    </div>
+                    <p>
+                        Lune Studio  <i class='bx bxs-heart'></i>
+                    </p>
+                    <div>
+                        <div>
+                            <span>Highest bid</span>
+                            <p> <i class="bi bi-link-45deg"></i> 3.005 <span>ETH</span></p>
+                        </div>
+                                <button>
+                                    BID <i class='bx bx-right-arrow-alt'></i>
+                                </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="continar-2">
+                <div class="title title2">
+                    <div>
+                    <span class="marg">Our Blockchain</span>
+                    <p>Powered by blockchain</p>
+                </div>
+            </div>
+            <div class="card-3">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+            </div>
+
+
+            </div>
+        </section>
+        
+        <!-- end sec-Limited  -->
+<!-- start sec-creator -->
+<section class="creator">
+    <div class="title title2">
+        <div>
+        <span>Our nft crearor</span>
+        <p>Top creator of week
+        </p>
+        </div>
+        <div>
+            <div class="bu-bg">
+                <span>Explore More</span>
+            </div>
+        </div>
+    </div>
+    <div class="continar-3">
+        <div class="card-4">
+        <div class="top-card">
+            <img src="imgs/title.png" alt="">
+            <div>
+                <b>Lune Studio</b>
+                <p>Created by <span>Ninja Hunter
+                </span></p>  
+                </div>
+                <span><i class='bx bxs-heart'></i>89</span>
+                </div>
+
+        <div class="button-card">
+            <div class="left-img">
+                <img src="imgs/img-card-1.png" alt="">
+            </div>
+            <div class="right-img">
+            <div>
+                <img src="imgs/img-card-2.png" alt="">
+                <img src="imgs/img-card-3.png" alt="">
+            </div>
+            <div>
+                <img src="imgs/img-card-4.png" alt="">
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="card-4">
+        <div class="top-card">
+            <img src="imgs/title.png" alt="">
+            <div>
+                <b>Lune Studio</b>
+                <p>Created by <span>Ninja Hunter
+                </span></p>  
+                </div>
+                <span><i class='bx bxs-heart'></i>89</span>
+                </div>
+
+        <div class="button-card">
+            <div class="left-img">
+                <img src="imgs/part2.png" alt="">
+            </div>
+            <div class="right-img">
+            <div>
+                <img src="imgs/img-card-5.png" alt="">
+                <img src="imgs/img-card-6.png" alt="">
+            </div>
+            <div>
+                <img src="imgs/img-card-4.png" alt="">
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="card-4">
+        <div class="top-card">
+            <img src="imgs/title.png" alt="">
+            <div>
+                <b>Lune Studio</b>
+                <p>Created by <span>Ninja Hunter
+                </span></p>  
+                </div>
+                <span><i class='bx bxs-heart'></i>89</span>
+                </div>
+
+        <div class="button-card">
+            <div class="left-img">
+                <img src="imgs/img-card-1.png" alt="">
+            </div>
+            <div class="right-img">
+            <div>
+                <img src="imgs/img-card-2.png" alt="">
+                <img src="imgs/img-card-3.png" alt="">
+            </div>
+            <div>
+                <img src="imgs/img-card-4.png" alt="">
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- end sec-creator -->
+ <!-- start sec-feedback -->
+<section class="feedback">
+ <div class="title title2">
+     <div>
+         <span>Our Testimonials</span>
+         <p>our client </p>
+         <span>feedback</span>
+        </div>
+        <div>
+            <a href="#"><i class='bx bxs-chevron-left' ></i>
+            </a>
+            <a href=""><i class='bx bxs-chevron-right'></i></a>
+        </div>
+    </div>
+    <div class="continar-4">
+        <div>
+            <i class='bx bxs-quote-alt-left'></i>
+            <p>Building your own stuff, you can do that too. The ASSET CREATOR will allow creators to make things for the as well as sell.</p>
+        </div>
+        <div>
+            <i class='bx bxs-quote-alt-left'></i>
+            <p>Building your own stuff, you can do that too. The ASSET CREATOR will allow creators to make things for the as well as sell.</p>
+        </div>
+    </div>
+    <div class="cards">
+        <div>
+            <div>
+            <img src="imgs/img-card-2.png" alt="">
+
+        </div>
+        <div>
+            <span>PAll WAlker " </span>
+            <p>Game CEO</p>
+        </div>
+        </div>
+        <div >
+        <div>
+            <img src="imgs/pall.png" alt="">
+        </div>
+        <div>
+            <span>Alaxerder “</span>
+            <p>Game CEO</p>
+
+        </div>
+        </div>
+        <div>
+        <div>
+            <img src="imgs/pall2.png" alt="">
+        </div>
+        <div>
+            <span>Jemse lee “ </span>
+            <p>Game CEO</p>
+
+        </div>
+        </div>
+        <div>
+        <div>
+            <img src="imgs/img-card-6.png" alt="">
+        </div>
+        <div>
+            <span>PAll WAlker " </span>
+            <p>Game CEO</p>
+
+        </div>
+        </div>
+    </div>
+    <div class="slider">
+    <div class="slider-1">
+        <img src="imgs/slider-1.png" alt="">
+        <img src="imgs/slider-2.png" alt="">
+        <img src="imgs/slider-3.png" alt="">
+        <img src="imgs/slider-4.png" alt="">
+    </div>
+    <div class="slider-2">
+        <img src="imgs/slider-1.png" alt="">
+        <img src="imgs/slider-2.png" alt="">
+        <img src="imgs/slider-3.png" alt="">
+        <img src="imgs/slider-4.png" alt="">
+    </div>
+    </div>
+    <div class="slider-pan">
+        <div class="slider-3">
+            <img src="imgs/slider-1.png" alt="">
+            <img src="imgs/slider-2.png" alt="">
+            <img src="imgs/slider-3.png" alt="">
+            <img src="imgs/slider-4.png" alt="">
+        </div>
+        <div class="slider-4">
+            <img src="imgs/slider-1.png" alt="">
+            <img src="imgs/slider-2.png" alt="">
+            <img src="imgs/slider-3.png" alt="">
+            <img src="imgs/slider-4.png" alt="">
+        </div>
+    </div>
+    </section>
+    <!-- end sec-feedback -->
+    <!-- start footer -->
+    <section class="footer">
+    <footer>
+        <div>
+            <img src="imgs/logo.png" alt="">
+            <div>
+                <p>Centerl Park West La, New York </p>
+                <p>+0 123 456 7890 </p>
+                <p>info@andspa.com </p>
+            </div>
+            <b>Open Hours</b>
+            <p>Sunday to Friday <span>08:00-20:00</span></p>
+        </div>
+        <div>
+            <span class="title-foot">Important Links</span>
+            <div class="links">
+                <p><a href="">Important</a> </p>
+                <p><a href="">ABOUT US</a> </p>
+                <p><a href="">MY ACCOUNT</a> </p>
+                <p><a href="">CONTACT</a> </p>
+                <p><a href="">SHIPPING & RETURNS</a> </p>
+
+            </div>
+
+        </div>
+        <div class="form">
+            <span class="title-foot">Subscribe</span>
+            <div>
+                <p>Sedsit amet nisl inveli viverra bendum acnisi. Etiam efficitur. </p>
+                <input type="text" placeholder="info@yourmail.com">
+                <div class="bu-bg"><span>Subscribe</span></div>
+
+            </div>
+        </div>
+        <div class="Instagram">
+            <span class="title-foot">Instagram</span>
+            <div class="inst">
+<div>
+    <img src="imgs/ins-part-1.png" alt="">
+<i class='bx bxl-instagram'></i>
+</div>
+<div>
+    <img src="imgs/ins-part-2.png" alt="">
+<i class='bx bxl-instagram'></i>
+</div>
+<div>
+    <img src="imgs/inst-part-3.png" alt="">
+<i class='bx bxl-instagram'></i>
+</div>
+<div>
+    <img src="imgs/inst-part-4.png" alt="">
+<i class='bx bxl-instagram'></i>
+</div>
+<div>
+    <img src="imgs/inst-part-5.png" alt="">
+<i class='bx bxl-instagram'></i>
+</div>
+<div>
+    <img src="imgs/ins-part-6.png" alt="">
+<i class='bx bxl-instagram'></i>
+</div>
+
+            </div>
+        </div>
+     </footer>
+     <div class="end">
+        <div>
+           <p>© 2024 By dyat, All Rights Reserved</p> 
+           <img src="imgs/7.png" alt="">
+        </div>
+     </div>
+    </section>
+     <!-- end footer -->
+
+
+</body>
+</html>
+
